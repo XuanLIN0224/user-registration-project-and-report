@@ -1,0 +1,102 @@
+/* css for Home Page*/
+#accordion{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navList {
+    background-color: rgb(180, 75, 180); 
+    border: none; 
+    color: white; 
+    padding: 15px 15px; 
+    text-decoration: none;
+    display: inline-block;  
+    font-size: 16px;
+    margin: 2px 1px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition-duration: 0.4s;
+}
+
+#navList:hover {
+    background-color: purple;
+    color: white; 
+}
+
+#accordion_title{
+    background-color:rgb(199, 129, 199);
+}
+#accordion_text{
+    background-color:rgb(231, 201, 231);
+}
+/*css for registration pages*/
+
+body
+{
+background-image:url('../images/uk_image.png');
+background-size: cover;
+}
+
+table{
+    background-color: rgb(255, 238, 255);
+    opacity: 0.8;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navBack {
+    background-color: rgb(180, 75, 180); 
+    border: none; 
+    color: white;
+    padding: 15px 15px; 
+    display: inline-block; 
+    font-size: 16px;
+    margin: 2px 1px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition-duration: 0.4s;
+}
+
+#navBack:hover {
+    background-color: purple; 
+    color: white; 
+}
+
+#header {
+    text-align: center; 
+    font-size: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    color: white; 
+    background-color: rgb(180, 75, 180); 
+}
+#information{
+    background-color: rgb(180, 75, 180); 
+}
+#next_button{
+    background-color: rgb(180, 75, 180);
+    border: none; 
+    color: white;
+    padding: 15px 15px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 2px 1px; 
+    cursor: pointer;
+    border-radius: 12px; 
+    transition-duration: 0.4s; 
+}
+#next_button:hover {
+    background-color: purple;
+    color: white; 
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(180, 75, 180); 
+    color: white; 
+    padding: 10px;
+    text-align: left;
+}

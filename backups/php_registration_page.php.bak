@@ -1,0 +1,44 @@
+<?php
+
+// connect to the database by loading the connect DB file
+include('DB_connect.php');
+
+
+// run the insert sql
+
+$sql = ("INSERT INTO `users` 
+(`user_Id`, `firstName`, `lastName`, `dob`, `age`) 
+VALUES (NULL, 'Alan', 'Lane', '1958-06-05', '64')");
+if (mysqli_query($conn, $sql)) { 
+echo "File uploaded successfully";
+
+$sql  = ("INSERT INTO `contactdetails` 
+(`contact_Id`, `user_Id`, `email`, `telephone`) 
+VALUES (NULL, '1', 'studio@customize.co.uk', '07884264856')");           
+if (mysqli_query($conn, $sql)) { 
+echo "File uploaded successfully";
+
+$sql  = ("INSERT INTO `address` 
+(`address_Id`, `user_Id`, `house_numbeName`, `street_name`, `city`, `postCode`) 
+VALUES (NULL, '1', '15', 'townsend house, hermitage road', 'hitchin', 'sh51dg')");   
+if (mysqli_query($conn, $sql)) { 
+echo "File uploaded successfully";
+
+$sql  = ("INSERT INTO `fees` 
+(`user_Id`, `feePaid`, `datePaid`, `dateDue`) 
+VALUES ('1', '1', '2022-05-05', '2022-05-26')");   
+if (mysqli_query($conn, $sql)) { 
+echo "File uploaded successfully";
+
+
+         
+}}}}		 else {
+echo "Failed to upload file."; }
+		
+
+// close the connectioon					
+$conn->close();
+
+echo " uploded";
+
+?>

@@ -1,0 +1,93 @@
+<?php
+
+//$test = "hello world";
+//echo $test."<hr>";
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Summer school web exercise</title>
+	
+<link type="text/css" rel="stylesheet" href="css/cssMain.css"/>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+
+<script>
+$(document).ready(function(){
+	
+	 /*-console.log( "ready! I tell you" );
+	$("tr:even").click(function() { alert("hi you") });*/
+	$("tr:odd").css("background-color", "#EFF1F1");
+	$("#navBack").click(function() { location.href = 'index.php' });
+		
+		$(function() {
+		$("#datepicker").datepicker().hide();	
+		});
+		
+		$.datepicker.setDefaults({
+	                showOn: "button",
+					buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+					buttonImageOnly: true,
+    dateFormat: "dd-mm-yy",
+    changeMonth: true,
+    changeYear: true,
+    yearRange: "-80:+00"
+		});
+		
+		$("#datepicker").change(function(){ 
+			var newDate= $(this).val();
+			$("#newdate").val(newDate);
+		});
+}); 
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+<div id="header"> HEADER </div>
+<div id="content">
+
+<table  border="1" align="center" cellspacing="10" id="contactTable">
+<thead>
+  <tr>
+    <th colspan=2>REGISTER</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td width ="30%"> <button type="button" id="navBack">HOME PAGE</button></td>
+	<td>Please add details</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td><input type="text" id="name" val="your name"/></td>
+
+  </tr>
+  <tr>
+    <td>Date of birth <input type="text" id="datepicker"></td>
+    <td><input type="text" id="newdate" val="dob"/></td>
+
+  </tr>
+   <tr>
+    <td colspan=2><input type="submit" val="register"></td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+
+<div id="footer"> FOOTER </div>
+</div>             
+                    
+                    
+                    
+</body>             
+</html>             
+                    

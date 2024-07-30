@@ -1,0 +1,14 @@
+/* css file */
+
+#container {
+color: gray;
+}
+
+#contactTable {
+	width: 50%;
+}
+
+#contactTable td {
+	height: 25px;
+
+}
